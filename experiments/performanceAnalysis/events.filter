@@ -1,0 +1,189 @@
+# Initial filter file, starting point for further adaptation.
+#
+# Considerations:
+#  - check possible wildcard options
+#  - check selected functions for relevancy
+#    (w.r.t. your knowledge of the application)
+#
+# Generated with the following parameters:
+#  - A region has to use at least 0% of the estimated trace buffer.
+#  - A region has to have a time/visits value of less than 10 us.
+#  - A region has to have at least 10000000 visits.
+#  - A region that is of type COM or USR.
+#
+# The file contains comments for each region providing additional information
+# regarding the respective region.
+# The entries are sorted by `maxbuffer`.
+# The common prefix for the files is:
+# '/'
+#
+# Please refer to the Score-P user guide for more options on filtering.
+SCOREP_REGION_NAMES_BEGIN
+  EXCLUDE
+    # type=COM max_buf= 4,557,928,570 visits=  175,304,945, time=-991.57s (-19.1%), time/visit=   -5.66us
+    # name='sklearn._config:_get_threadlocal_config'
+    # file='myenv/lib/python3.10/site-packages/sklearn/_config.py'
+    MANGLED sklearn._config:_get_threadlocal_config
+
+    # type=COM max_buf= 2,996,724,432 visits=  115,258,632, time= 100.42s (  1.9%), time/visit=    0.87us
+    # name='sklearn._config:config_context'
+    # file='myenv/lib/python3.10/site-packages/sklearn/_config.py'
+    MANGLED sklearn._config:config_context
+
+    # type=COM max_buf= 2,996,724,432 visits=  115,258,632, time= 254.79s (  4.9%), time/visit=    2.21us
+    # name='sklearn._config:set_config'
+    # file='myenv/lib/python3.10/site-packages/sklearn/_config.py'
+    MANGLED sklearn._config:set_config
+
+    # type=USR max_buf= 2,996,468,566 visits=  115,248,791, time=  62.20s (  1.2%), time/visit=    0.54us
+    # name='importlib._bootstrap:parent'
+    # file='studd-main/experiments/<frozen importlib._bootstrap>'
+    MANGLED importlib._bootstrap:parent
+
+    # type=COM max_buf= 2,996,357,416 visits=  115,244,516, time=  29.40s (  0.6%), time/visit=    0.26us
+    # name='sklearn.utils._array_api:_check_array_api_dispatch'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/_array_api.py'
+    MANGLED sklearn.utils._array_api:_check_array_api_dispatch
+
+    # type=USR max_buf= 2,996,042,062 visits=  115,232,387, time= 216.23s (  4.2%), time/visit=    1.88us
+    # name='functools:update_wrapper'
+    # file='lib/python3.10/functools.py'
+    MANGLED functools:update_wrapper
+
+    # type=USR max_buf= 1,531,236,616 visits=   58,893,716, time=  19.84s (  0.4%), time/visit=    0.34us
+    # name='scipy.sparse._base:issparse'
+    # file='myenv/lib/python3.10/site-packages/scipy/sparse/_base.py'
+    MANGLED scipy.sparse._base:issparse
+
+    # type=USR max_buf= 1,528,325,734 visits=   58,781,759, time=  18.52s (  0.4%), time/visit=    0.32us
+    # name='inspect:isclass'
+    # file='lib/python3.10/inspect.py'
+    MANGLED inspect:isclass
+
+    # type=COM max_buf= 1,527,955,104 visits=   58,767,504, time=  88.67s (  1.7%), time/visit=    1.51us
+    # name='joblib.parallel:_get_sequential_output'
+    # file='myenv/lib/python3.10/site-packages/joblib/parallel.py'
+    MANGLED joblib.parallel:_get_sequential_output
+
+    # type=COM max_buf= 1,527,947,876 visits=   58,767,226, time=  49.76s (  1.0%), time/visit=    0.85us
+    # name='sklearn.utils.validation:check_is_fitted'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/validation.py'
+    MANGLED sklearn.utils.validation:check_is_fitted
+
+    # type=COM max_buf= 1,527,947,876 visits=   58,767,226, time=  63.85s (  1.2%), time/visit=    1.09us
+    # name='sklearn.utils.validation:_is_fitted'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/validation.py'
+    MANGLED sklearn.utils.validation:_is_fitted
+
+    # type=COM max_buf= 1,527,947,876 visits=   58,767,226, time= 226.42s (  4.4%), time/visit=    3.85us
+    # name='sklearn.utils.validation:<listcomp>'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/validation.py'
+    MANGLED sklearn.utils.validation:<listcomp>
+
+    # type=COM max_buf= 1,512,975,152 visits=   58,191,352, time=  43.16s (  0.8%), time/visit=    0.74us
+    # name='sklearn.utils.parallel:<genexpr>'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:<genexpr>
+
+    # type=USR max_buf= 1,512,975,152 visits=   58,191,352, time=  12.79s (  0.2%), time/visit=    0.22us
+    # name='joblib.parallel:print_progress'
+    # file='myenv/lib/python3.10/site-packages/joblib/parallel.py'
+    MANGLED joblib.parallel:print_progress
+
+    # type=USR max_buf= 1,512,613,752 visits=   58,177,452, time=  39.48s (  0.8%), time/visit=    0.68us
+    # name='sklearn.base:_check_n_features'
+    # file='myenv/lib/python3.10/site-packages/sklearn/base.py'
+    MANGLED sklearn.base:_check_n_features
+
+    # type=USR max_buf= 1,512,613,752 visits=   58,177,452, time=  80.22s (  1.5%), time/visit=    1.38us
+    # name='sklearn.utils.validation:_num_features'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/validation.py'
+    MANGLED sklearn.utils.validation:_num_features
+
+    # type=COM max_buf= 1,512,610,138 visits=   58,177,313, time=  48.34s (  0.9%), time/visit=    0.83us
+    # name='sklearn.ensemble._forest:<genexpr>'
+    # file='myenv/lib/python3.10/site-packages/sklearn/ensemble/_forest.py'
+    MANGLED sklearn.ensemble._forest:<genexpr>
+
+    # type=USR max_buf= 1,498,363,828 visits=   57,629,378, time=  32.87s (  0.6%), time/visit=    0.57us
+    # name='contextlib:helper'
+    # file='lib/python3.10/contextlib.py'
+    MANGLED contextlib:helper
+
+    # type=USR max_buf= 1,498,363,828 visits=   57,629,378, time=  56.28s (  1.1%), time/visit=    0.98us
+    # name='contextlib:__init__'
+    # file='lib/python3.10/contextlib.py'
+    MANGLED contextlib:__init__
+
+    # type=COM max_buf= 1,498,363,724 visits=   57,629,374, time=  30.24s (  0.6%), time/visit=    0.52us
+    # name='contextlib:__enter__'
+    # file='lib/python3.10/contextlib.py'
+    MANGLED contextlib:__enter__
+
+    # type=COM max_buf= 1,498,363,724 visits=   57,629,374, time=  49.89s (  1.0%), time/visit=    0.87us
+    # name='contextlib:__exit__'
+    # file='lib/python3.10/contextlib.py'
+    MANGLED contextlib:__exit__
+
+    # type=USR max_buf= 1,498,043,924 visits=   57,617,074, time=  27.20s (  0.5%), time/visit=    0.47us
+    # name='functools:wraps'
+    # file='lib/python3.10/functools.py'
+    MANGLED functools:wraps
+
+    # type=COM max_buf= 1,497,995,200 visits=   57,615,200, time=  57.32s (  1.1%), time/visit=    0.99us
+    # name='sklearn.utils.parallel:delayed'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:delayed
+
+    # type=USR max_buf= 1,497,995,200 visits=   57,615,200, time=  28.61s (  0.6%), time/visit=    0.50us
+    # name='sklearn.utils.parallel:delayed_function'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:delayed_function
+
+    # type=USR max_buf= 1,497,995,200 visits=   57,615,200, time=  30.66s (  0.6%), time/visit=    0.53us
+    # name='sklearn.utils.parallel:__init__'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:__init__
+
+    # type=USR max_buf= 1,497,995,200 visits=   57,615,200, time=  30.95s (  0.6%), time/visit=    0.54us
+    # name='sklearn.utils.parallel:_with_config'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:_with_config
+
+    # type=USR max_buf= 1,497,995,200 visits=   57,615,200, time=  12.72s (  0.2%), time/visit=    0.22us
+    # name='sklearn.utils.parallel:with_config'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:with_config
+
+    # type=COM max_buf= 1,497,995,200 visits=   57,615,200, time= 119.76s (  2.3%), time/visit=    2.08us
+    # name='sklearn.utils.parallel:__call__'
+    # file='myenv/lib/python3.10/site-packages/sklearn/utils/parallel.py'
+    MANGLED sklearn.utils.parallel:__call__
+
+    # type=USR max_buf= 1,497,633,826 visits=   57,601,301, time=  95.50s (  1.8%), time/visit=    1.66us
+    # name='numpy.core._methods:_sum'
+    # file='myenv/lib/python3.10/site-packages/numpy/core/_methods.py'
+    MANGLED numpy.core._methods:_sum
+
+    # type=COM max_buf= 1,497,633,800 visits=   57,601,300, time=  86.99s (  1.7%), time/visit=    1.51us
+    # name='sklearn.ensemble._forest:_accumulate_prediction'
+    # file='myenv/lib/python3.10/site-packages/sklearn/ensemble/_forest.py'
+    MANGLED sklearn.ensemble._forest:_accumulate_prediction
+
+    # type=COM max_buf= 1,497,633,800 visits=   57,601,300, time= 482.89s (  9.3%), time/visit=    8.38us
+    # name='sklearn.tree._classes:predict_proba'
+    # file='myenv/lib/python3.10/site-packages/sklearn/tree/_classes.py'
+    MANGLED sklearn.tree._classes:predict_proba
+
+    # type=USR max_buf= 1,497,633,800 visits=   57,601,300, time=  34.47s (  0.7%), time/visit=    0.60us
+    # name='sklearn.tree._classes:_validate_X_predict'
+    # file='myenv/lib/python3.10/site-packages/sklearn/tree/_classes.py'
+    MANGLED sklearn.tree._classes:_validate_X_predict
+
+    # type=USR max_buf=   679,784,040 visits=   26,145,540, time=   4.78s (  0.1%), time/visit=    0.18us
+    # name='scipy.io.arff._arffread:parse_data'
+    # file='myenv/lib/python3.10/site-packages/scipy/io/arff/_arffread.py'
+    MANGLED scipy.io.arff._arffread:parse_data
+
+SCOREP_REGION_NAMES_END
+
